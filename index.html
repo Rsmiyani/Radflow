@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadFlow — Voice-Powered Radiology Reporting</title>
+  <meta name="description" content="RadFlow helps radiologists turn spoken observations into structured, reviewable reports, reducing repetitive documentation and keeping the reporting workflow focused.">
+  
+  <!-- Typography: Manrope, IBM Plex Sans, Instrument Serif & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       04. NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="RadFlow Home">
+        <img src="assets/logo.png" alt="RadFlow — Voice to Radiology" class="nav-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#security" class="nav-link">Security</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="signin.html" class="btn-link">Sign In</a>
+        <a href="signup.html" class="btn-primary">
+          <span>Get Started</span>
+          <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.33334 8H12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 3.33334L12.6667 8L8 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         05. HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Medical Precision Grid & Ambient Spotlight Background Layers -->
+      <div class="hero-bg-spotlight" aria-hidden="true"></div>
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        
+        <!-- Hero Editorial Content -->
+        <div class="hero-header">
+          <h1 class="hero-headline" aria-label="Turn your voice into a finished report.">
+            <span class="word-mask" aria-hidden="true"><span class="word">Turn</span></span>
+            <span class="word-mask" aria-hidden="true"><span class="word">your</span></span>
+            <span class="word-mask" aria-hidden="true"><span class="word">voice</span></span>
+            <span class="word-mask" aria-hidden="true"><span class="word">into</span></span>
+            <span class="word-mask" aria-hidden="true"><span class="word">a</span></span>
+            <span class="word-mask accent-mask" aria-hidden="true"><span class="word headline-accent glow-reveal">finished report.</span></span>
+          </h1>
+
+          <p class="hero-copy">
+            RadFlow helps radiologists turn spoken observations into structured, reviewable reports, reducing repetitive documentation and keeping the reporting workflow focused.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="signup.html" class="btn-primary">
+              <span>Get Started</span>
+              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.33334 8H12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 3.33334L12.6667 8L8 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="#how-it-works" class="btn-secondary">
+              <span>See How It Works</span>
+            </a>
+          </div>
+
+          <!-- Micro-Trust Line (Inspired by Reference) -->
+          <div class="hero-trust-badges">
+            <span>NO CREDIT CARD NEEDED</span>
+            <span class="trust-bullet">·</span>
+            <span>HIPAA COMPLIANT</span>
+            <span class="trust-bullet">·</span>
+            <span class="trust-highlight">Radiologist Verified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         06. THE RADFLOW PROCESS (SCROLLYTELLING)
+         ==================================================================== -->
+    <section class="process-section" id="how-it-works">
+      <div class="process-container">
+        
+        <div class="process-showcase">
+          <div class="process-text-column">
+            <!-- massive padding top/bottom to allow scrolling -->
+            <div class="process-step" data-step="0">
+              <div class="step-indicator">
+                <span class="step-num">01</span>
+                <span class="step-line"></span>
+              </div>
+              <div class="step-content">
+
+                <h3 class="step-title">Speak & Detect</h3>
+                <p class="step-desc">Doctor dictates findings naturally while our software instantly detects and transcribes medical terminology.</p>
+                
+                <div class="step-features">
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    Natural dictation
+                  </span>
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Medical terminology
+                  </span>
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Real-time capture
+                  </span>
+                </div>
+
+                <div class="step-ui-card">
+                  <div class="ui-card-top">
+                    <div class="ui-recording">
+                      <div class="ui-rec-icon"><div class="rec-dot rec-pulse"></div></div>
+                      <div class="ui-rec-text">
+                        <span class="ui-label">Recording</span>
+                        <span class="ui-time">00:18</span>
+                      </div>
+                    </div>
+                    <div class="ui-waveform">
+                      <span class="w-1 bg-coral rounded-full animate-wave-1"></span>
+                      <span class="w-1 bg-coral rounded-full animate-wave-2"></span>
+                      <span class="w-1 bg-coral rounded-full animate-wave-3"></span>
+                      <span class="w-1 bg-coral rounded-full animate-wave-4"></span>
+                      <span class="w-1 bg-coral rounded-full animate-wave-5"></span>
+                      <span class="w-1 bg-coral rounded-full animate-wave-6"></span>
+                      <span class="w-1 bg-coral rounded-full animate-wave-7"></span>
+                    </div>
+                    <div class="ui-detecting">
+                      <span class="ui-label flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-teal animate-pulse"></span> Detecting medical terms...</span>
+                      <div class="ui-term-pills">
+                        <span class="ui-term-pill">maxillary sinus</span>
+                        <span class="ui-term-pill">mucosal thickening</span>
+                        <span class="ui-term-pill">air-fluid levels</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card-bottom">
+                    <p class="ui-transcript">"There is mild bilateral maxillary sinus mucosal thickening with no air-fluid levels..."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="process-step" data-step="1">
+              <div class="step-indicator">
+                <span class="step-num">02</span>
+                <span class="step-line"></span>
+              </div>
+              <div class="step-content">
+
+                <h3 class="step-title">Generate Report</h3>
+                <p class="step-desc">Raw transcripts are seamlessly converted into structured, perfectly formatted clinical data.</p>
+                
+                <div class="step-features">
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                    ACR Taxonomy
+                  </span>
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                    Template matching
+                  </span>
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    Clinical logic
+                  </span>
+                </div>
+
+                <div class="step-ui-card">
+                  <div class="ui-card-split">
+                    <div class="ui-split-left">
+                      <span class="ui-label">RAW PARSED DATA</span>
+                      <p class="ui-raw-text">{"anatomy": "maxillary sinus", "condition": "mucosal thickening", "severity": "mild", "laterality": "bilateral"}</p>
+                    </div>
+                    <div class="ui-split-arrow">
+                      <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                    <div class="ui-split-right">
+                      <span class="ui-label text-teal">GENERATED FINDINGS</span>
+                      <div class="ui-structured-box">
+                        <span class="ui-section-title">PARANASAL SINUSES:</span>
+                        <p class="ui-section-content">Mild bilateral maxillary sinus mucosal thickening.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="process-step" data-step="2">
+              <div class="step-indicator">
+                <span class="step-num">03</span>
+                <span class="step-line"></span>
+              </div>
+              <div class="step-content">
+
+                <h3 class="step-title">Verify & Download</h3>
+                <p class="step-desc">The final report is verified by our AI LLM, ready for immediate download and clinical use.</p>
+
+                <div class="step-features">
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    Physician review
+                  </span>
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    E-Signature
+                  </span>
+                  <span class="feature-chip">
+                    <svg class="w-3.5 h-3.5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    HL7 / FHIR
+                  </span>
+                </div>
+
+                <div class="step-ui-card">
+                  <div class="ui-card-header">
+                    <div class="ui-badge bg-teal text-white">READY TO SIGN</div>
+                    <span class="ui-label">Report ID: #993-21A</span>
+                  </div>
+                  <div class="ui-card-body flex justify-between items-center">
+                    <div>
+                      <h4 class="ui-physician">Dr. Sarah Vance, MD</h4>
+                      <p class="ui-timestamp">Today, 10:42 AM</p>
+                    </div>
+                    <button class="ui-sign-btn">
+                      Sign & Export
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="process-image-column">
+            <div class="process-img-track" id="processImgTrack">
+              <div class="process-img-wrapper" data-step="0">
+                <img src="assets/clinical_voice_dictation.jpg" alt="Step 1: Speak & Detect">
+              </div>
+              <div class="process-img-wrapper" data-step="1">
+                <img src="assets/process_step2_generate.jpg" alt="Step 2: Generate Report">
+              </div>
+              <div class="process-img-wrapper" data-step="2">
+                <img src="assets/radiologist_reading_pacs.jpg" alt="Step 3: Verify & Download">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         06. CLINICAL MODALITIES SECTION
+         ======================================================================== -->
+    <section class="modality-section" id="modalities">
+      <div class="modality-container">
+        
+        <div class="modality-header text-center scroll-animate">
+          <h2 class="modality-title">Built for the way <span class="headline-accent">radiology</span> works.</h2>
+          <p class="modality-desc">Calibrated across standard diagnostic modalities with specialized lexicon support for CT, MRI, chest radiography, and ultrasound acoustic parameters.</p>
+        </div>
+
+        <div class="modality-pills-wrapper">
+          <button class="modality-pill active" id="pill-all" onclick="filterModality('all')">All Clinical Modalities (4)</button>
+          <button class="modality-pill" id="pill-ctmri" onclick="filterModality('ctmri')">CT & MRI Neuro Series</button>
+          <button class="modality-pill" id="pill-xray" onclick="filterModality('xray')">Chest Radiography (PA View)</button>
+          <button class="modality-pill" id="pill-us" onclick="filterModality('us')">Thyroid Diagnostic Ultrasound</button>
+        </div>
+
+        <div class="modality-showcase-container">
+          
+          <!-- CT & MRI Brain Scan -->
+          <div class="modality-card dark-card" id="showcase-ctmri">
+            <div class="dark-card-header">
+              <div class="dark-card-title-group">
+                <span class="badge-teal">NEURO MODALITY</span>
+                <span class="dark-card-title">AXIAL CT (LEFT) // T2-WEIGHTED MRI (RIGHT)</span>
+              </div>
+              <div class="dark-card-meta">
+                <span>VENTRICULAR & CAUDATE FIDELITY</span>
+                <span>WINDOW: BRAIN (W:80, L:40)</span>
+              </div>
+            </div>
+            
+            <div class="dark-card-image-wrapper">
+              <img src="assets/thoracic_ct_reconstruction.jpg" alt="Axial CT and MRI brain scan slices" class="modality-image">
+              <div class="dark-card-hud hidden-mobile">
+                <span class="text-teal font-semibold">RADFLOW PARSER:</span> "Ventricles & sulci symmetric"
+              </div>
+            </div>
+            
+            <div class="dark-card-footer">
+              <span>CLINICAL FIDELITY MONOCHROME SERIES // PRECISE ANATOMICAL LANDMARKS (LATERAL VENTRICLES, CAUDATE NUCLEUS)</span>
+              <span class="text-teal text-right">ACR RADLEX™ 4.1 COMPLIANT</span>
+            </div>
+          </div>
+
+          <!-- Chest X-Ray & Ultrasound Split -->
+          <div class="modality-split-grid" id="showcase-xray-us">
+            
+            <div class="modality-card dark-card">
+              <div class="dark-card-header">
+                <div class="dark-card-title-group">
+                  <span class="badge-coral">DUAL MODALITY</span>
+                  <span class="dark-card-title">CHEST RADIOGRAPH (PA) & THYROID SONOGRAM</span>
+                </div>
+                <span class="dark-card-meta hidden-mobile">120 kVp / 4.2 mAs • L12-5 TIS 0.5</span>
+              </div>
+              
+              <div class="dark-card-image-wrapper">
+                <img src="assets/showcase_xray_us.jpg" alt="Chest X-ray radiograph and thyroid ultrasound" class="modality-image">
+              </div>
+              
+              <div class="dark-card-footer">
+                <span>PA CHEST RADIOGRAPHY + 3.8cm THYROID ACOUSTIC MAPPING</span>
+                <span class="text-teal text-right">REAL-TIME CALLOUT EXTRACTION</span>
+              </div>
+            </div>
+
+            <div class="modality-feature-card">
+              <div class="modality-feature-top">
+
+                <h3 class="feature-title">Multimodal parsing precision</h3>
+                <p class="feature-desc">RadFlow instantly distinguishes between plain radiographic projections, cross-sectional voxel data, and sonographic echogenicity descriptions.</p>
+                
+                <div class="feature-prompts">
+                  <div class="feature-prompt-box">
+                    <span class="prompt-label">X-RAY AUTO-PROMPT</span>
+                    <span class="prompt-text">"Cardiomediastinal silhouette normal..."</span>
+                  </div>
+                  <div class="feature-prompt-box">
+                    <span class="prompt-label">ULTRASOUND AUTO-PROMPT</span>
+                    <span class="prompt-text">"Isoechoic nodule in the right thyroid lobe..."</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="modality-feature-bottom">
+                <span class="text-teal font-semibold">99.4% ACR ACCURACY</span>
+                <span>ZERO TRANSCRIPTION LAG</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ====================================================================
+         08. CAPABILITIES GRID
+         ==================================================================== -->
+    <section class="features-section" id="capabilities">
+      <div class="features-container">
+        
+        <div class="modality-header text-center scroll-animate">
+
+          <h2 class="modality-title">Everything you need for a voice-first <span class="headline-accent">workflow</span>.</h2>
+          <p class="modality-desc">Constructed without clutter. Each capability solves a specific bottleneck in the clinical diagnostic lifecycle.</p>
+        </div>
+
+        <div class="features-grid scroll-animate">
+          
+          <!-- FEATURE 01 -->
+          <div class="feature-card">
+            <div class="feature-card-content">
+              <div class="feature-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">01. Voice-first reporting</h3>
+              <p class="feature-desc">Speak naturally while RadFlow captures your observations with zero wake words or mechanical voice macros required.</p>
+            </div>
+            <div class="feature-meta">
+              <span class="feature-meta-label coral"><span class="status-dot dot-coral"></span>ACTIVE RECORDING</span>
+              <span class="feature-meta-value">48kHz PCM</span>
+            </div>
+          </div>
+
+          <!-- FEATURE 02 -->
+          <div class="feature-card">
+            <div class="feature-card-content">
+              <div class="feature-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">02. Real-time transcription</h3>
+              <p class="feature-desc">See spoken observations converted into text with instantaneous latency, recognizing specialized radiographic nomenclature.</p>
+            </div>
+            <div class="feature-meta">
+              <span class="feature-meta-value font-mono">"...parenchymal attenuation within normal limits..."</span>
+            </div>
+          </div>
+
+          <!-- FEATURE 03 -->
+          <div class="feature-card">
+            <div class="feature-card-content">
+              <div class="feature-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M4 6h16M4 12h16M4 18h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">03. Intelligent report structuring</h3>
+              <p class="feature-desc">Organize dictated information into appropriate report sections, automatically generating standard Findings and Impressions.</p>
+            </div>
+            <div class="feature-meta">
+              <span class="feature-meta-label teal">FINDINGS &amp; IMPRESSION</span>
+              <span class="feature-meta-value">AUTO-SORT</span>
+            </div>
+          </div>
+
+          <!-- FEATURE 04 -->
+          <div class="feature-card">
+            <div class="feature-card-content">
+              <div class="feature-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">04. Report generation</h3>
+              <p class="feature-desc">Turn structured information into a clean, professional clinical document ready for hospital EHR transmission.</p>
+            </div>
+            <div class="feature-meta">
+              <span class="feature-meta-label charcoal">HL7 / FHIR EXPORT</span>
+              <span class="feature-meta-value teal">READY</span>
+            </div>
+          </div>
+
+          <!-- FEATURE 05 -->
+          <div class="feature-card">
+            <div class="feature-card-content">
+              <div class="feature-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">05. Review before finalization</h3>
+              <p class="feature-desc">Review, edit, and control the final output before it becomes an indelible medical record. You remain the author.</p>
+            </div>
+            <div class="feature-meta">
+              <span class="feature-meta-label muted">SIGN-OFF GATEWAY</span>
+              <span class="feature-meta-value teal">ATTENDING MD</span>
+            </div>
+          </div>
+
+          <!-- FEATURE 06 -->
+          <div class="feature-card">
+            <div class="feature-card-content">
+              <div class="feature-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">06. Built around your workflow</h3>
+              <p class="feature-desc">Keep voice, transcription, review, and reporting seamlessly connected without switching application windows.</p>
+            </div>
+            <div class="feature-meta">
+              <span class="feature-meta-label charcoal">PACS INTEGRATION</span>
+              <span class="feature-meta-value teal">ZERO CONTEXT SWITCH</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         09. COMPARISON TABLE SECTION
+         ==================================================================== -->
+    <section class="comparison-section" id="comparison">
+      <div class="comparison-container">
+        
+        <div class="comparison-header scroll-animate">
+          <h2 class="comparison-title">The gap between the diagnosis and the <span class="headline-accent">report</span> is where time is lost.</h2>
+          <p class="comparison-desc">Observations are made instantly, then bottlenecked by rigid voice macros, manual formatting, and error correction. RadFlow closes that gap to zero.</p>
+        </div>
+
+        <div class="comparison-table-wrapper scroll-animate">
+          <div class="comparison-grid">
+            
+            <!-- Table Header -->
+            <div class="comp-col-header before-header">
+              <span class="comp-mono-bracket">[</span> TRADITIONAL WORKFLOW <span class="comp-mono-bracket">]</span>
+            </div>
+            <div class="comp-col-header after-header">
+              <span class="comp-mono-bracket">[</span> WITH RADFLOW <span class="comp-mono-bracket">]</span>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="comp-cell before-cell">
+              <div class="comp-cell-content">
+                <span class="comp-icon text-muted">×</span>
+                <span class="comp-text">Rigid voice macros ("next section", "new line")</span>
+              </div>
+              <span class="comp-meta text-muted">+ 2 MINS</span>
+            </div>
+            <div class="comp-cell after-cell">
+              <div class="comp-cell-content">
+                <span class="comp-icon text-teal">✓</span>
+                <span class="comp-text">Continuous, natural conversational dictation</span>
+              </div>
+              <span class="comp-meta text-teal">LIVE</span>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="comp-cell before-cell">
+              <div class="comp-cell-content">
+                <span class="comp-icon text-muted">×</span>
+                <span class="comp-text">Manually organizing findings and impressions</span>
+              </div>
+              <span class="comp-meta text-muted">+ 3 MINS</span>
+            </div>
+            <div class="comp-cell after-cell">
+              <div class="comp-cell-content">
+                <span class="comp-icon text-teal">✓</span>
+                <span class="comp-text">Clinically structured automatically</span>
+              </div>
+              <span class="comp-meta text-teal">INSTANT</span>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="comp-cell before-cell">
+              <div class="comp-cell-content">
+                <span class="comp-icon text-muted">×</span>
+                <span class="comp-text">Proofreading generic voice-to-text errors</span>
+              </div>
+              <span class="comp-meta text-muted">+ 5 MINS</span>
+            </div>
+            <div class="comp-cell after-cell">
+              <div class="comp-cell-content">
+                <span class="comp-icon text-teal">✓</span>
+                <span class="comp-text">Radiology-specific semantic parsing</span>
+              </div>
+              <span class="comp-meta text-teal">ZERO EDITS</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         14. ARCHITECTURE & SECURITY
+         ==================================================================== -->
+    <section class="section-wrapper bg-surface" id="security">
+      <div class="section-container">
+        <div class="security-layout">
+          <div class="security-text-col">
+
+
+            <h2 class="section-title">AI should assist the workflow, not get in the way of it.</h2>
+            <p class="section-desc mb-8">Constructed to align with institutional healthcare governance, strict HIPAA compliance, and local hospital sandboxing.</p>
+            
+            <div class="security-grid">
+              <div class="sec-card">
+                <span class="sec-meta">01 / PRIVACY FIRST</span>
+                <h4 class="sec-title">Zero Training Retention</h4>
+                <p class="sec-desc">Patient PHI is never stored or used for foundational model re-training.</p>
+              </div>
+              <div class="sec-card">
+                <span class="sec-meta">02 / ACCESS GATING</span>
+                <h4 class="sec-title">Hospital SSO & RBAC</h4>
+                <p class="sec-desc">SAML 2.0 and Kerberos integration mapped directly to verified credentials.</p>
+              </div>
+              <div class="sec-card">
+                <span class="sec-meta">03 / HUMAN AUTHORITY</span>
+                <h4 class="sec-title">Mandatory MD Sign-off</h4>
+                <p class="sec-desc">No automated generation commits to the EMR without attending verification.</p>
+              </div>
+              <div class="sec-card">
+                <span class="sec-meta">04 / TRACEABILITY</span>
+                <h4 class="sec-title">Full Speech Audit Trail</h4>
+                <p class="sec-desc">Every sentence links deterministically back to verified acoustic timestamps.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="security-visual-col">
+            <div class="topology-map">
+              <div class="topo-header">
+                <span class="topo-title">TRUST TOPOLOGY MAP</span>
+                <span class="topo-meta text-teal">ISOLATED CLINICAL RUNTIME</span>
+              </div>
+              <div class="topo-body">
+                <div class="topo-node outline">
+                  <span class="font-bold flex items-center gap-2"><span class="status-dot dot-teal"></span> PHYSICIAN PACS CONSOLE</span>
+                  <span class="text-muted">PORTRAIT DICOM</span>
+                </div>
+                <div class="topo-arrow">↓ SECURE LOCAL WEBSOCKET (TLS 1.3)</div>
+                <div class="topo-node filled">
+                  <div class="topo-node-top">
+                    <span class="font-bold">RADFLOW SPEECH & SEMANTIC GATEWAY</span>
+                    <span class="badge">ON-PREM / VPC</span>
+                  </div>
+                  <div class="topo-node-boxes">
+                    <div class="topo-box">
+                      <span class="text-coral">ACOUSTIC STREAM</span>
+                      <span>48kHz Lexical Stream</span>
+                    </div>
+                    <div class="topo-box">
+                      <span class="text-teal">RADLEX TAXONOMY</span>
+                      <span>ACR Schema Validator</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="topo-arrow">↓ CERTIFIED DICOM / HL7 EXPORT</div>
+                <div class="topo-node outline">
+                  <span class="font-bold flex items-center gap-2"><span class="status-dot dot-teal"></span> HOSPITAL EHR / RIS DATABASE</span>
+                  <span class="text-teal font-semibold">AUTHENTICATED RECORD</span>
+                </div>
+              </div>
+              <div class="topo-footer">
+                <span>SOC 2 TYPE II CERTIFIED</span>
+                <span>HIPAA BAA READY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         15. FINAL CTA
+         ==================================================================== -->
+    <section class="section-wrapper bg-ivory" id="get-started">
+      <div class="section-container">
+        <div class="cta-layout">
+          <div class="cta-text">
+
+
+            <h2 class="section-title">Your words in.<br>A structured report out.</h2>
+            <p class="section-desc mb-8">Experience a voice-first approach to radiology reporting designed to keep your workflow focused on diagnostic precision.</p>
+            <div class="hero-cta-group">
+              <a href="signup.html" class="btn-primary">
+                <span>Get Started</span>
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.33334 8H12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 3.33334L12.6667 8L8 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#features" class="btn-secondary">
+                <span>Explore Features</span>
+              </a>
+            </div>
+          </div>
+          <div class="cta-visual">
+            <div class="cta-report-card">
+              <div class="cta-report-header">
+                <span class="text-teal font-semibold">FINALIZED REPORT</span>
+                <span class="text-coral flex items-center gap-1"><span class="status-dot dot-coral"></span> VOICE VERIFIED</span>
+              </div>
+              <div class="cta-report-body">
+                <span class="text-muted text-[10px] font-mono block mb-2">ACC: RA-9941 // SIGNED BY DR. VANCE, MD</span>
+                <p class="font-bold mb-1 text-sm">IMPRESSION:</p>
+                <p class="text-sm mb-1">1. No acute territorial ischemia or intracranial hemorrhage.</p>
+                <p class="text-sm mb-3">2. Normal ventricular symmetry without midline deviation.</p>
+                <span class="text-teal text-[11px] font-mono font-semibold">STATUS: DISPATCHED TO HOSPITAL EHR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="section-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="RadFlow" class="footer-logo">
+          <p class="footer-desc">Voice-powered radiology reporting. Transforming spoken observations into structured clinical reports in reading rooms worldwide.</p>
+        </div>
+        <div class="footer-links-wrapper">
+          <div class="footer-col">
+            <h5 class="footer-heading">Product</h5>
+            <ul class="footer-nav">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#modalities">Modalities</a></li>
+              <li><a href="#security">Security</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-heading">Company</h5>
+            <ul class="footer-nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Reading Rooms</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-heading">Legal</h5>
+            <ul class="footer-nav">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Data Governance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 RadFlow Technologies Inc. All rights reserved.</span>
+        <span>Diagnostic precision • Editorial minimalism</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
